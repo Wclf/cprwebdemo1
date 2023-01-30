@@ -9,6 +9,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 #main {
 
 }
@@ -212,7 +216,95 @@ html {
 }
 
 
-#conntent {
+#content {
+
+}
+
+/* css for general content-section */
+
+#content .content-section {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 0px;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+/* css for admin section */
+
+#content-admin {
+    background-color: #FAF5E9;
+}
+
+.admin-list {
+    padding: 32px 0;
+}
+
+.admin-detail {
+    float: left;
+    padding: 0 8px;
+    width: 33.33333%;
+    text-align: center;
+}
+
+.admin-name {
+    margin: 16px 0;
+    font-size: 15px;
+}
+
+.admin-img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+.admin-img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/*Css for modal-admin */
+.modal-admin {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    position: relative;
+}
+
+.modal-close {
+
+}
+
+.modal-header {
 
 }
 
