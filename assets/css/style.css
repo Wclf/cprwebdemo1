@@ -257,28 +257,28 @@ html {
     background-color: #FAF5E9;
 }
 
-.admin-list {
+#content-admin .admin-list {
     padding: 32px 0;
 }
 
-.admin-detail {
+#content-admin .admin-detail {
     float: left;
     padding: 0 8px;
     width: 33.33333%;
     text-align: center;
 }
 
-.admin-name {
+#content-admin .admin-name {#content-admin 
     margin: 16px 0;
     font-size: 15px;
 }
 
-.admin-img {
+#content-admin .admin-img {
     width: 154px;
     border-radius: 4px;
 }
 
-.admin-img:hover {
+#content-admin .admin-img:hover {
     opacity: 0.6;
     cursor: pointer;
 }
@@ -296,16 +296,78 @@ html {
     justify-content: center;
 }
 
-.modal-container {
+.modal-admin .modal-container {
+    background-color: #FAF5E9;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
     position: relative;
+    border-radius: 20px;
 }
 
-.modal-close {
-
+.modal-admin .modal-close {
+    position: absolute;
+    font-size: 20px;
+    color: #FAF5E9;
+    right: 0;
+    padding: 8px 12px;
 }
 
-.modal-header {
+.modal-admin .modal-close:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
 
+.modal-admin .modal-header {
+    background-color: #009B4D;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #FAF5E9;
+    border-radius: 20px;
+}
+
+.modal-admin .modal-heading-icon {
+    margin-right: 16px;
+}
+
+.modal-admin .overview-admin {
+    padding: 20px;
+}
+
+.modal-admin .admin-img {
+    float: left;
+    border-radius: 5px;
+}
+
+.modal-admin .admin-name {
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 8px 16px;
+}
+
+.modal-admin .about-admin {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.modal-admin .admin-info-link {
+    float: right;
+    transform: translateY(100px);
+}
+
+.modal-admin .admin-info-link a {
+    color: #009B4D;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+.admin-info-link a:hover {
+    opacity: 0.6;
 }
 
 #footer {
