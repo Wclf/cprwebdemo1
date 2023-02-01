@@ -268,7 +268,7 @@ html {
     text-align: center;
 }
 
-#content-admin .admin-name {#content-admin 
+#content-admin .admin-name {
     margin: 16px 0;
     font-size: 15px;
 }
@@ -291,9 +291,13 @@ html {
     bottom: 0;
     left: 0;
     background-color: rgba(0,0,0,0.4);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+}
+
+.modal-admin.open {
+    display: flex;
 }
 
 .modal-admin .modal-container {
@@ -368,6 +372,22 @@ html {
 
 .admin-info-link a:hover {
     opacity: 0.6;
+}
+
+.modal-admin .modal-container {
+    animation: modalFadeIn ease 1s;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-220px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #footer {
